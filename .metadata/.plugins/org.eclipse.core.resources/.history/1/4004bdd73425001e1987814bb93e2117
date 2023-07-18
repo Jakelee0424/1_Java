@@ -1,0 +1,38 @@
+package edu.kh.control.loop;
+
+public class ForExample {
+
+	/* for문 - 끝이 정해져 있는 반복문
+	
+	for(초기식; 조건식; 증감식;){
+			수행문
+	}
+	
+	1) 초기식 : for문을 제어하는 용도의 변수 선언
+	2) 조건식 : for문의 반복 여부 지정
+	3) 증감식 : 초기식에 사용된 변수에 대해 for 문이 끝날 때마다 증가 또는 감소시켜 결과를 변하게 함
+	
+	*/
+	
+	public void ex1() {
+		
+		for(int i = 1; i<=10 ; i++) { // i가 10이 될때 까지
+			System.out.println(i);
+		}
+	}
+	
+	public void ex2() {
+
+		for(int i = 3 ; i<=7 ; i++) { // 3~7
+			System.out.println(i);
+		}
+	}
+
+	public void ex3() {
+	
+		for(int i = 2 ; i <= 15; i++) {
+			System.out.println(i);
+		}
+	}
+
+}
