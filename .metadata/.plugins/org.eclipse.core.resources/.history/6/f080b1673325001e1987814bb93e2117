@@ -1,0 +1,11 @@
+package edu.kh.control.loop;
+
+public class loopRun {
+
+	public static void main(String[] args) {
+		
+		ForExample forEx = new ForExample();
+		
+		
+	}
+}

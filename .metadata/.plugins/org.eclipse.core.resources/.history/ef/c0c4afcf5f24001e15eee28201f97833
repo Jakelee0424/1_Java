@@ -1,0 +1,9 @@
+package edu.kh.op.practice;
+
+public class PracticeRun {
+
+	public void practice1() {
+		
+		
+	}
+}

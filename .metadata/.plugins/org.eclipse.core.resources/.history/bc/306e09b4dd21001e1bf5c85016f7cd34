@@ -1,0 +1,17 @@
+package edu.kh.variable.ex2;
+
+import java.util.Scanner; // -> java.util 패키지에서 Scanner를 수입함
+// import: 다른 패키지에 존재하는 클래스를 얻어오는 구문
+
+public class ScannerExample {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		sc.nextLine();
+		
+		
+		
+	}
+}

@@ -1,0 +1,18 @@
+package edu.kh.control.condition;
+
+public class ConditionRunAnswer {
+
+	public static void main(String[] args) {
+
+		ConditionExampleAnswer condition = new ConditionExampleAnswer();
+		
+		condition.exa5();
+	}
+}
+// 점수(100점 만점)를 입력 받아
+// 90점 이상 : A
+// 80점 이상 90점 미만 : B
+// 70점 이상 80점 미만 : C
+// 60점 이상 70점 미만 : D
+// 60점 미만 : F
+// 0점 미만, 100 초과 : "잘못 입력하셨습니다"

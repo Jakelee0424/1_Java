@@ -1,0 +1,26 @@
+package practice;
+
+public class ComparePrac {
+
+	public static void main(String[] args) {
+		
+		int a = 10;
+		int b = 10;
+		int c = 5;
+		
+		System.out.println(a == b); // == 같으면 true
+		System.out.println(a != c); // != 다르면 true
+		
+		
+		if(a < b) {
+			
+		}
+		
+		int result = a > b ? a++ : b--;
+		
+		for(int d = 0; a <=b; a++) {}
+		while (a >= b) {}
+		
+		System.out.println(result);
+	}
+}

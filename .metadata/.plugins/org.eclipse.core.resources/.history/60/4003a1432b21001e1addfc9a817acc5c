@@ -1,0 +1,27 @@
+package edu.kh.variable.ex1;
+
+public class VariableExample3 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 형변환(Casting) : 값의 자료형을 변환하는 것(boolean 제외)
+		 
+		 1. 형변환의 필요성
+		 	1) 컴퓨터는 기본적으로 같은 자료형끼리 연산이 가능
+		 	2) 다른 자료형과 연산 시 오류 발생
+		 	-> 이런 상황을 해결하기 위해 형변환을 실행(자동/강제)
+		 	
+		 2. 
+		 
+		 
+		 */
+	
+		int num = 10;
+		double num2 = 3.5;
+		
+		System.out.println("자동 형변환 결과 : " + num + num2);
+		
+		
+	}
+}
