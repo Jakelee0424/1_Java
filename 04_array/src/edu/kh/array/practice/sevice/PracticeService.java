@@ -20,17 +20,22 @@ public class PracticeService {
 		
 		*/
 		
-	int[] arr = new int[9];
-	int sum = 0;
-	
-	for(int i = 0 ; i < arr.length ; i++) {
-		arr[i] += i+1;
-		System.out.print(arr[i]+ " ");
-		if(i % 2 == 0) {
+		int[] arr = new int[9];
+		int sum = 0;
+		
+		for(int i = 0 ; i < arr.length ; i++) {
+			arr[i] = i+1;			
+			System.out.print(arr[i] + " ");
+		
+			if (i % 2 == 0 ) {
 			sum += arr[i];
-			} 
-		}
-	System.out.println("\n짝수 번째 인덱스 합 = " + sum);
+			
+			}
+			
+		} 
+		System.out.println();
+		System.out.print("짝수 번째 인덱스 합 = " + sum);
+		
 	}
 
 	public void practice2() {
@@ -42,13 +47,18 @@ public class PracticeService {
 */
 	
 		int[] arr = new int[9];
-
-		for(int i = 0 ; i < arr.length ; i++) {
-			
-			System.out.print(arr[i]);
-			}
+		int sum =0;
 		
-	
+		for(int i = 0 ; i < arr.length  ; i++) {
+			arr[i] = 9-i;
+			System.out.print(arr[i] + " ");
+			if((arr[i]-1) % 2 != 0) {
+			sum += arr[i];  	
+			}
+		}
+		System.out.println();
+		System.out.println(sum);
+	System.out.println(Arrays.toString(arr));
 	}
 
 	public void practice3() {
@@ -176,4 +186,171 @@ public class PracticeService {
 			}
 		}
 	}
+
+	public void practice1_1() {
+		
+		int[] arr = new int[9];
+		int sum = 0;
+		
+		for(int i = 0 ; i < 9 ; i++) {
+			arr[i] = i+1;
+			System.out.print(arr[i] + " ");
+			
+			if(i % 2 ==0) {
+				sum += arr[i];
+			}
+		}
+		System.out.println();
+		System.out.print("짝수 인덱스 합 = " + sum);
+		
+	}
+
+	public void practice8() {
+		/*
+
+3이상인 홀수를 입력 받아 
+배열의 중간까지는 1부터 1씩 증가하여 오름차순으로 값을 넣고,
+중간 이후부터 끝까지는 1씩 감소하여 내림차순으로 값을 넣어 출력하세요
+
+단, 입력한 정수가 홀수가 아니거나 3 미만일 경우 “다시 입력하세요”를 출력하고
+다시 정수를 받도록 하세요.
+[실행 화면]
+정수 : 4
+다시 입력하세요.
+정수 : -6
+다시 입력하세요.
+정수 : 5 - 2i
+3 = 2, 4 = 1 input = 5
+4 = 3, 5 = 2 , 6 = 1 input =7
+
+
+1, 2, 3, 2, 1 
+1 2 3 4 3 2 1
+7 4 3
+9 5 4   i = 2x -1
+11 6 5
+13 7 6
+		*/
+		
+		System.out.print("3 이상의 홀수를 입력하세요 = ");
+		int input = sc.nextInt();
+		
+		if(input % 2 == 0 || input <3 ) {
+			System.out.println("다시 입력하세요.");
+		} else {
+			int[] arr = new int[input];
+			
+			for(int i = 0 ; i < input ; i++) {
+				arr[i] = i+1;
+				if(i*2 > input) { 
+				arr[i] = input - i;
+				
+				}		System.out.print(arr[i] + " ");
+			}
+			
+		}
+	}
+
+	public void practice9() {
+		
+/*		
+	10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고,
+1~10 사이의 난수를 발생시켜 배열에 초기화한 후 출력하세요
+		
+		
+*/
+		int[] arr = new int[10];
+		
+		for(int i = 0 ; i < 10 ; i++) {
+			arr[i] = (int)(Math.random()*10+1);
+			System.out.print(arr[i] + " ");
+		}
+		
+	}
+
+	public void practice10() {
+
+	/*
+10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고,
+1~10 사이의 난수를 발생시켜 배열에 초기화 후
+배열 전체 값과 그 값 중에서 최대값과 최소값을 출력하세요
+	*/	
+		
+		int[] arr = new int[10];
+		for(int i = 0 ; i < 10 ; i++) {
+			arr[i] = (int)(Math.random()*10+1);
+			System.out.print(arr[i]+ " ");
+		}
+		Arrays.sort(arr);
+		System.out.println();
+		System.out.println("최소값 = " + arr[0]);
+		System.out.println("최대값 = " + arr[9]);
+	}
+
+	public void practice11() {
+		/*
+10개의 값을 저장할 수 있는 정수형 배열을 선언 및 할당하고
+1~10 사이의 난수를 발생시켜 중복된 값이 없게 배열에 초기화한 후 출력하세요.
+		
+		*/
+		
+		int[] arr = new int[10];
+		for(int i = 0 ; i < 10 ; i++) {
+			int random = (int)(Math.random()*10+1);
+			arr[i] = random;
+			
+			for(int j = 0 ; j < i ; j++) {
+				if(arr[j] == random) {
+					i--;
+					break;
+				}
+			
+			}
+			
+		}
+		System.out.print(Arrays.toString(arr));
+	}
+
+	public void practice12() {
+		
+		/*
+로또 번호 자동 생성기 프로그램을 만들기.
+(중복 값 없이 오름차순으로 정렬하여 출력하세요.)
+
+		*/
+		
+		int[] arr = new int[6];
+
+		
+		for(int i = 0 ; i < 6 ; i++) {
+		
+			int random = (int)(Math.random()*45+1);
+			arr[i] = random;
+			
+			for(int j = 0 ; j < i ; j++) {
+				if (arr[j] == random) {
+					i--;
+					break;
+				}
+			}
+		}
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+	}
+	
+	public void practice13() {
+		/*
+		  
+문자열을 입력 받아 문자열에 어떤 문자가 들어갔는지 배열에 저장하고
+문자의 개수와 함께 출력하세요.
+[실행 화면]
+문자열 : application
+문자열에 있는 문자 : a, p, l, i, c, t, o, n
+문자 개수 : 8
+
+		*/
+		
+		
+	}
 }
+	
