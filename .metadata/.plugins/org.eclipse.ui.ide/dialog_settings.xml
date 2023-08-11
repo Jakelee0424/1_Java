@@ -8,6 +8,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\workspace2"/>
+			<item value="C:\workspace\1_basics"/>
+			<item value="C:\workspace\1_Java\book_project"/>
+			<item value="C:\workspace\1_Java\book_hw"/>
 			<item value="C:\Users\user1\Downloads\03_controlA"/>
 			<item value="C:\homework space\00_javaBasic"/>
 			<item value="C:\workspace\1_Java\00_javaBasic"/>

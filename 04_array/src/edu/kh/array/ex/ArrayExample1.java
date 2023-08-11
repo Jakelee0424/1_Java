@@ -44,6 +44,9 @@ public class ArrayExample1 {
 		System.out.println("arr의 1번째 = " + arr[1]);
 		System.out.println("arr의 2번째 = " + arr[2]);
 			
+		for(int num2 : arr) {
+			System.out.println(num2);
+		}
 		
 	}
 

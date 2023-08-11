@@ -22,5 +22,7 @@ public class ComparePrac {
 		while (a >= b) {} // (조건식) -> a>=될 때까지 {} 실행 
 		
 		System.out.println(result);
+		
+		
 	}
 }

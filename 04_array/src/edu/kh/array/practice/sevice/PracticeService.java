@@ -50,7 +50,7 @@ public class PracticeService {
 		int sum =0;
 		
 		for(int i = 0 ; i < arr.length  ; i++) {
-			arr[i] = 9-i;
+			arr[i] = arr.length-i;
 			System.out.print(arr[i] + " ");
 			if((arr[i]-1) % 2 != 0) {
 			sum += arr[i];  	
@@ -92,7 +92,7 @@ public class PracticeService {
 		int[] arr = new int[5];
 		boolean var = false;
 		
-		for(int i = 0 ; i < 5 ; i++) {
+		for(int i = 0 ; i < arr.length ; i++) {
 			System.out.print(i+1 + "번째 정수 입력 = ");
 			arr[i] = sc.nextInt();
 		}
@@ -129,7 +129,7 @@ public class PracticeService {
 			arr[i] = input.charAt(i);
 		}
 				
-		System.out.print("찾을 문자를 입력하세요 =");
+		System.out.print("찾을 문자를 입력하세요 = ");
 		char word = sc.next().charAt(0);
 		
 		System.out.print(input + "에 "+ word + "가 존재하는 위치는 ");
@@ -140,7 +140,7 @@ public class PracticeService {
 			}
 		}
 		System.out.println();
-		System.out.println(word + "개수 = " + count);
+		System.out.println(word + " 개수 = " + count);
 		
 	}
 
@@ -261,7 +261,7 @@ public class PracticeService {
 */
 		int[] arr = new int[10];
 		
-		for(int i = 0 ; i < 10 ; i++) {
+		for(int i = 0 ; i < arr.length ; i++) {
 			arr[i] = (int)(Math.random()*10+1);
 			System.out.print(arr[i] + " ");
 		}
@@ -277,7 +277,7 @@ public class PracticeService {
 	*/	
 		
 		int[] arr = new int[10];
-		for(int i = 0 ; i < 10 ; i++) {
+		for(int i = 0 ; i < arr.length ; i++) {
 			arr[i] = (int)(Math.random()*10+1);
 			System.out.print(arr[i]+ " ");
 		}
@@ -350,7 +350,43 @@ public class PracticeService {
 
 		*/
 		
+		System.out.print("문자열을 입력하세요 = ");
+		String input = sc.next();
 		
+		char[] arr = new char[input.length()];
+		char[] arr2 = arr; 
+		int num = arr.length;
+		
+		for(int i = 0 ; i <arr.length ; i++) {
+			arr[i] = input.charAt(i);	
+		
+		}
+		
+		for(int i = 0 ; i < arr.length ; i++) {
+			for(int j = 0 ; j < i ; j++) {
+				if(arr[i] == arr[j]) {
+					num--;
+					
+				}
+			}
+		}
+		char[] arr3 = new char[num];
+		
+		for(int i = 0 ; i < num ; i++) {
+			for(int j = 0 ; j < i ; j++) {
+				if(arr[i] != arr[j]) {
+					arr3[i] = arr[i];
+				}
+			}
+		}
+	
+	
+		System.out.println("문자개수 : " + num);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(arr3));
+	
 	}
+			
+
 }
 	
