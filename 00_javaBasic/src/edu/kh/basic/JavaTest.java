@@ -15,10 +15,6 @@ public class JavaTest {
 
 	// 클래스(Class) - 자바 코드가 작성되는 영역 
 	
-	public void test() {
-		int testNo = 0;
-	}
-	
 	public static void main(String[] args) {
 		
 	// 메인 메서드(main method) - 자바 애플리케이션(프로그램)을 실행하기 위해 반드시 필요한 메서드
